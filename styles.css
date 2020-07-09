@@ -34,6 +34,8 @@ nav  div {
 }
 .home a {
   font-size: 24px;
+  width: 10%;
+  text-align: left;
 }
 
 body {
