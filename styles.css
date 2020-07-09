@@ -21,16 +21,9 @@ nav a:hover {
 nav a:last-child {
   margin: 0;
 }
-nav  div {
-  display: inline-block;
-}
 .links {
   width: 90%;
   text-align: right;
-}
-.home {
-  width: 10%;
-  text-align: left;
 }
 .home a {
   font-size: 24px;
