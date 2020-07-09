@@ -1,3 +1,41 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(5, 65, 102);
+  padding: 10px 20px;
+  margin: 0;
+  box-shadow:0 2px 1px #777;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
+nav a:hover {
+  text-shadow: 0px 1px 5px #444;
+}
+nav a:last-child {
+  margin: 0;
+}
+nav > div {
+  display: inline-block;
+}
+.links {
+  width: 90%;
+  text-align: right;
+}
+.home {
+  width: 10%;
+  text-shadow: 0px 1px 5px #444;
+}
+.home a {
+  font-size: 24px;
+}
+
 body {
     background-color: lightskyblue;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,44 +46,6 @@ body {
     height: 90vh;
     justify-content: center;
   }
-
-   nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(5, 65, 102);
-    padding: 10px 20px;
-    margin: 0;
-    box-shadow:0 2px 1px #777;
-}
- nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    display: inline-block;
-    margin-right: 10px;
-}
- nav a:hover {
-    text-shadow: 0px 1px 5px #444;
-}
- nav a:last-child {
-    margin: 0;
-}
- nav > div {
-    display: inline-block;
-}
- .links {
-    width: 90%;
-    text-align: right;
-}
- .home {
-    width: 10%;
-    text-shadow: 0px 1px 5px #444;
-}
- .home a {
-    font-size: 24px;
-}
   
   body h1 {
     font-size: 72px;
