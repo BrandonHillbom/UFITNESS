@@ -21,7 +21,7 @@ nav a:hover {
 nav a:last-child {
   margin: 0;
 }
-nav > div {
+nav  div {
   display: inline-block;
 }
 .links {
@@ -30,7 +30,6 @@ nav > div {
 }
 .home {
   width: 10%;
-  text-shadow: 0px 1px 5px #444;
   text-align: left;
 }
 .home a {
