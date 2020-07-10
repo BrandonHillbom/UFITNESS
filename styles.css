@@ -50,7 +50,7 @@ body {
   body h2 {
     font-size: 48px;
   }
-  body div {
+  .main {
     font-size: 24px;
     width: 720px;
     text-align: justify;
