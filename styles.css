@@ -22,7 +22,7 @@ nav a:last-child {
   margin: 0;
 }
 .links {
-  width: 90%;
+  width: 95%;
   text-align: right;
 }
 .home {
@@ -41,14 +41,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    
   }
   
   body h1 {
     font-size: 72px;
+    vertical-align: middle;
   }
-  
+  body h2 {
+    font-size: 48px;
+  }
   body div {
-    font-size: 28px;
+    font-size: 24px;
+    width: 720px;
+    text-align: justify;
   }
