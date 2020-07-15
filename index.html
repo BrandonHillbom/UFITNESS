@@ -2,19 +2,48 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
   <title>UFITNESS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<nav>
-  <div class="home">
-    <a href="#">Home</a>
-  </div>
-  <div class="links">
-    <a href="#">Body Type Quiz</a>
-    <a href="#">Fitness Tracker</a>
-    <a href="#">Nutrition Guide</a>
-    <a href="#">Exercise Guide</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">UFITNESS</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavCollapse"
+    aria-controls="navbarNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Body Type Quiz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Progress Tracker</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resources
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Nutrition</a>
+          <a class="dropdown-item" href="#">Exercises</a>
+          <a class="dropdown-item" href="#">External</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </nav>
 
@@ -24,7 +53,7 @@
     <h1>UFITNESS</h1>
     <h2>Welcome to UFitness!</h2>
     <br>
-    <div class = "main">
+    <div class="main">
       UFITNESS is an aplication specifically designed to provide
       resources and aid to people wanting to make a change in their lives.
       One of the most difficult aspects of beginning your fitness
@@ -37,49 +66,59 @@
       This applications's most notable features can be viewed below.
     </div>
     <h2>Body Type Quiz</h2>
-    <div class = "main">
-      Everyone's body's are different and require different training and 
-      nutrition methods to achieve their goals. Most people fit into one 
-      of three body types: ectomorph, mesomorph, and endomorph. By identifying 
-      which of these three types you are, in combination with other factors such 
-      as your goals, eating habits, and desire to train through our body type quiz, 
+    <div class="main">
+      Everyone's body's are different and require different training and
+      nutrition methods to achieve their goals. Most people fit into one
+      of three body types: ectomorph, mesomorph, and endomorph. By identifying
+      which of these three types you are, in combination with other factors such
+      as your goals, eating habits, and desire to train through our body type quiz,
       you will be one step closer to realizing your potential!
     </div>
     <h2>
       Fitness Tracker
     </h2>
-    <div class = "main">
-      One of the most challenging aspects to attaining one's fitness goals is 
-      sticking to a program until until the end. We at UFitness completely understand 
-      the dissapointment of not seeing your progress. However, we tend to only focus on 
-      macroscopic properties rather than data that shows undeniable progress. Through 
-      our fitness tracker, you will be able to see your improvement by tracking calorie 
-      and protein intake, weight loss/gain, muscle growth, strength, and endurance! You 
-      can also select foods that you eat throughout the day and we will automatically 
+    <div class="main">
+      One of the most challenging aspects to attaining one's fitness goals is
+      sticking to a program until until the end. We at UFitness completely understand
+      the dissapointment of not seeing your progress. However, we tend to only focus on
+      macroscopic properties rather than data that shows undeniable progress. Through
+      our fitness tracker, you will be able to see your improvement by tracking calorie
+      and protein intake, weight loss/gain, muscle growth, strength, and endurance! You
+      can also select foods that you eat throughout the day and we will automatically
       calculate nutritional information for you!
     </div>
     <h2>Nutrition Guide</h2>
-    <div class = "main">
-      Nothing is worse when trying to physically and mentally better yourself than when 
-      you research what you should be eating and instead, you are given general servings 
-      or meals that even Gordon Ramsey would struggle to cook! Our nutrition guide provides 
-      you with meals and supplemental snacks that combine convenience, health, and taste 
-      to give you exactly what you are looking for! There are also extensive resources and 
-      information to help you create your own versions of these meals to ensure the nutritional 
+    <div class="main">
+      Nothing is worse when trying to physically and mentally better yourself than when
+      you research what you should be eating and instead, you are given general servings
+      or meals that even Gordon Ramsey would struggle to cook! Our nutrition guide provides
+      you with meals and supplemental snacks that combine convenience, health, and taste
+      to give you exactly what you are looking for! There are also extensive resources and
+      information to help you create your own versions of these meals to ensure the nutritional
       plan is working for you instead of you working for it.
     </div>
     <h2>Exercise Guide</h2>
-    <div class = "main">
-      Everyone has different experience with weightlifting and exercising so while many 
-      people may know exactly what workouts they should be doing, others may be on the 
-      ground floor. This section features muscle group targeting exercises as well as 
-      step by step instruction on how to perform each movement. Additionally, information 
-      is given on what people tend to do wrong and tips to improve your form, thus achieving 
+    <div class="main">
+      Everyone has different experience with weightlifting and exercising so while many
+      people may know exactly what workouts they should be doing, others may be on the
+      ground floor. This section features muscle group targeting exercises as well as
+      step by step instruction on how to perform each movement. Additionally, information
+      is given on what people tend to do wrong and tips to improve your form, thus achieving
       optimal growth.
 
     </div>
 
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
