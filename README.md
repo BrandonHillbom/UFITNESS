@@ -7,4 +7,5 @@ Top Features:
 -Slots for the user to input their workout information and meals consumed each day to track their calories and protein intake.  
 -Exercises and information detailing proper techniques designed to target various muscles.  
 -Access to videos and websites from experienced fitness professionals on various topics to give the user only the best information about fitness, nutrition, supplements, and more!  
--Graphs and statistics showing their progress with weight difference, muscle growth, and how close they are to their goals.  # README
+-Graphs and statistics showing their progress with weight difference, muscle growth, and how close they are to their goals.  
+![Getting Started](images/info-arch.jpg)
