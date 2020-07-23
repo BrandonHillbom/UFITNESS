@@ -2,10 +2,6 @@
 body {
     background-color: rgb(74, 169, 228);
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
   }
   
   body h1 {
@@ -14,13 +10,21 @@ body {
     padding: 10px;
     margin: 50px 0px;
     font-weight: bolder;
+    text-align: center;
   }
   body h2 {
     font-size: 48px;
     font-weight: bold;
+    text-align: center;
   }
-  .main {
+  .col-md-8 {
     font-size: 24px;
     width: 720px;
     text-align: justify;
   }
+  footer {
+
+    color: #DCDCDC;
+    margin-top: 30px;
+    text-align: center;
+}
