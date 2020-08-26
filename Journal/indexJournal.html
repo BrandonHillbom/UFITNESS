@@ -41,9 +41,9 @@
   paragraph.innerText = `${entry.name} \n sets: ${entry.sets} \n reps: ${entry.reps}`
     body.appendChild(paragraph)
 
-    const paragraph = document.createElement('p');
-  paragraph.innerText = entry.created.toLocaleString()
-    body.appendChild(paragraph)
+    const SecondParagraph = document.createElement('p');
+  SecondParagraph.innerText = entry.created.toLocaleString()
+    body.appendChild(SecondParagraph)
   })
 }
 
