@@ -12,6 +12,42 @@
 
     <title>UFITNESS</title>
     <link rel="stylesheet" href="../styles.css">
+
+    <script>
+        window.onload = function() {
+        const body = document.querySelector('body')
+
+        const entries = [
+    {
+      name: 'Workout',
+      created: new Date(),
+      muscleGroups: ['Hamstrings', 'Calves', 'Quads', 'Glutes'],
+      excerises: ['Barbell squat', 'Barbell Sumo Squat', 'Hack Squat', 'Smith Machine Hip Thrusts', 'Hamstring Machine Curls', 'Smith Machine Calf Raises', 'Calf Extensions'],
+      sets: '',
+      reps: ''
+    },
+    {
+      name: 'Workout 2',
+      created: new Date(),
+      muscleGroups: ['chest', 'Triceps', 'Shoulders'],
+      excerises: ['Barbell Bench Press'],
+      sets: '',
+      reps: ''
+    },
+  ]
+
+  entries.forEach(function(entry) {
+    const paragraph = document.createElement('p');
+  paragraph.innerText = `${entry.name} \n sets: ${entry.sets} \n reps: ${entry.reps}`
+    body.appendChild(paragraph)
+
+    const paragraph = document.createElement('p');
+  paragraph.innerText = entry.created.toLocaleString()
+    body.appendChild(paragraph)
+  })
+}
+
+    </script>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -50,7 +86,6 @@
         </ul>
     </div>
 </nav>
-
 
 <body>
     <footer>
