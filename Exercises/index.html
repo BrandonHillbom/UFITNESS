@@ -11,47 +11,11 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>UFITNESS</title>
-    <link rel="stylesheet" href="../styles.css">
-
-    <script>
-        window.onload = function() {
-        const body = document.querySelector('body')
-
-        const entries = [
-    {
-      name: 'Workout',
-      created: new Date(),
-      muscleGroups: ['Hamstrings', 'Calves', 'Quads', 'Glutes'],
-      excerises: ['Barbell squat', 'Barbell Sumo Squat', 'Hack Squat', 'Smith Machine Hip Thrusts', 'Hamstring Machine Curls', 'Smith Machine Calf Raises', 'Calf Extensions'],
-      sets: '',
-      reps: ''
-    },
-    {
-      name: 'Workout 2',
-      created: new Date(),
-      muscleGroups: ['chest', 'Triceps', 'Shoulders'],
-      excerises: ['Barbell Bench Press'],
-      sets: '',
-      reps: ''
-    },
-  ]
-
-  entries.forEach(function(entry) {
-    const paragraph = document.createElement('p');
-  paragraph.innerText = `${entry.name} \n sets: ${entry.sets} \n reps: ${entry.reps}`
-    body.appendChild(paragraph)
-
-    const SecondParagraph = document.createElement('p');
-  SecondParagraph.innerText = entry.created.toLocaleString()
-    body.appendChild(SecondParagraph)
-  })
-}
-
-    </script>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="../index.html">UFITNESS</a>
+    <a class="navbar-brand" href="/index.html">UFITNESS</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavCollapse"
         aria-controls="navbarNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,16 +25,16 @@
     <div class="collapse navbar-collapse" id="navbarNavCollapse">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="indexJournal.html">Journal<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Quiz/indexQuiz.html">Body Type Quiz</a>
+                <a class="nav-link" href="/Journal">Journal</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Progress/indexProgress.html">Progress Tracker</a>
+                <a class="nav-link" href="/Quiz">Body Type Quiz</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Progress">Progress Tracker</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdownMenuLink" role="button"
@@ -78,17 +42,15 @@
                     Resources
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="../Nutrition/indexNutrition.html">Nutrition</a>
-                    <a class="dropdown-item" href="../Exercises/indexExercises.html">Exercises</a>
-                    <a class="dropdown-item" href="../External/indexExternal.html">External</a>
+                    <a class="dropdown-item" href="/Nutrition">Nutrition</a>
+                    <a class="dropdown-item active" href="/Exercises">Exercises<span class="sr-only">(current)</span></a>
+                    <a class="dropdown-item" href="/External">External</a>
                 </div>
             </li>
         </ul>
     </div>
 </nav>
-<main>
-<body>
-</body>
+
     <footer>
         <div class="bg-dark">
             UFITNESS &#169; 2020
@@ -104,7 +66,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</main>
-
+</body>
 
 </html>
