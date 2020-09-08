@@ -28,3 +28,15 @@ body {
     margin-top: 30px;
     text-align: center;
 }
+
+#journal-entries ul {
+  display: inline;
+}
+
+#journal-entries ul > li {
+  display: inline;
+  background-color: orange;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  margin: 0.25rem;
+}
