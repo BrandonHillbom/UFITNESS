@@ -11,7 +11,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>UFITNESS</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
 </head>
 
 <body>
@@ -74,37 +74,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script>
-        window.onload = function () {
-            const entries = [
-                {
-                    name: 'Workout',
-                    created: new Date(),
-                    muscleGroups: ['Hamstrings', 'Calves', 'Quads', 'Glutes'],
-                    excerises: ['Barbell squat', 'Barbell Sumo Squat', 'Hack Squat', 'Smith Machine Hip Thrusts', 'Hamstring Machine Curls', 'Smith Machine Calf Raises', 'Calf Extensions'],
-                    sets: '',
-                    reps: ''
-                },
-                {
-                    name: 'Workout 2',
-                    created: new Date(),
-                    muscleGroups: ['chest', 'Triceps', 'Shoulders'],
-                    excerises: ['Barbell Bench Press'],
-                    sets: '',
-                    reps: ''
-                },
-            ]
-
-            entries.forEach(function (entry) {
-                const paragraph = document.querySelector('#journal1');
-                paragraph.innerText = `${entry.name} \n sets: ${entry.sets} \n reps: ${entry.reps}`
-
-                const SecondParagraph = document.querySelector('#journal2');
-                SecondParagraph.innerText = entry.created.toLocaleString()
-            })
-        }
-
-    </script>
+    <script src="/assets/scripts/journal.js" ></script>
 </body>
 
 

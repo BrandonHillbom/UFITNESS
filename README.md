@@ -9,4 +9,4 @@ Top Features:
 -Access to videos and websites from experienced fitness professionals on various topics to give the user only the best information about fitness, nutrition, supplements, and more!  
 -Graphs and statistics showing their progress with weight difference, muscle growth, and how close they are to their goals.  
   
-![Information Architecture](images/info-arch.jpg)
+![Information Architecture](assets/images/info-arch.jpg)
