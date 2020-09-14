@@ -29,13 +29,13 @@ body {
     text-align: center;
 }
 
-#journal-entries ul {
-  display: inline;
+.heading3 {
+  font-weight: bold;
 }
 
 #journal-entries ul > li {
   display: inline;
-  background-color: orange;
+  background-color:  rgb(228, 169, 74);
   border-radius: 1rem;
   padding: 0.25rem 1rem;
   margin: 0.25rem;
