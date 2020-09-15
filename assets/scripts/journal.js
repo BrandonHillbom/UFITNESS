@@ -4,7 +4,7 @@ window.onload = function () {
             name: 'Workout 1',
             created: new Date('2020-07-30'),
             muscleGroups: ['Hamstrings', 'Calves', 'Quads', 'Glutes'],
-            excerises: ['Barbell squat', 'Barbell Sumo Squat', 'Hack Squat', 'Smith Machine Hip Thrusts', 'Hamstring Machine Curls', 'Smith Machine Calf Raises', 'Calf Extensions'],
+            excerises: ['BB squat', 'BB Sumo Squat', 'Hack Squat', 'Smith Machine Hip Thrusts', 'Hamstring Machine Curls', 'Smith Machine Calf Raises', 'Calf Extensions'],
             sets: 4,
             reps: 10
         },
@@ -12,35 +12,36 @@ window.onload = function () {
             name: 'Workout 2',
             created: new Date('2020-08-01'),
             muscleGroups: ['chest', 'Triceps', 'Shoulders'],
-            excerises: ['Barbell Bench Press'],
+            excerises: ['BB Bench Press', 'DB Flye', 'DB Squeeze Press', 'DB Incline Flye', 'BB Incline Bench Press', 'Cable Rope Pushdown', 'Bench Dips', 'DB Backscratcher', 'DB Arnold Press', 'Cable Side Raise', 'DB Cross Body Front Raise'],
             sets: 4,
             reps: 12
         },
     ]
     const journalEntriesEl = document.getElementById('journal-entries')
     journalEntriesEl.innerHTML = ''
+    journalEntriesEl.classList.add('card-deck')
 
     //Turn each entry into text on the document
     entries.forEach(function (entry) {
+        const cardEl = document.createElement('div')
+        cardEl.classList.add('card')
         const entryEl = document.createElement('div')
+        entryEl.classList.add('card-body')
 
         //WORKOUT TITLE text
-        const titleEl = document.createElement('h2')
+        const titleEl = document.createElement('h5')
+        titleEl.classList.add('card-title')
         titleEl.innerText = entry.name
         entryEl.appendChild(titleEl)
 
-        //DATE text
-        const dateEl = document.createElement('p')
-        dateEl.innerText = entry.created.toLocaleDateString()
-        entryEl.appendChild(dateEl)
+
 
         //MUSCLE GROUPS
         const muscleGroupsEl = document.createElement('div')
-        muscleGroupsEl.setAttribute('id', 'inlineListItems')
 
         //Muscle Groups header
-        const muscleGroupsHeadingEl = document.createElement('h3')
-        muscleGroupsHeadingEl.setAttribute('class', 'heading3')
+        const muscleGroupsHeadingEl = document.createElement('p')
+        muscleGroupsHeadingEl.classList.add('font-weight-bold')
         muscleGroupsHeadingEl.innerText = 'Muscle Groups'
         muscleGroupsEl.appendChild(muscleGroupsHeadingEl)
 
@@ -60,8 +61,8 @@ window.onload = function () {
         const exercisesEl = document.createElement('div')
 
         //Exercises Header
-        const exercisesHeadingsEl = document.createElement('h3')
-        exercisesHeadingsEl.setAttribute('class', 'heading3')
+        const exercisesHeadingsEl = document.createElement('p')
+        exercisesHeadingsEl.classList.add('font-weight-bold')
         exercisesHeadingsEl.innerText = 'Exercises'
         exercisesEl.appendChild(exercisesHeadingsEl)
 
@@ -78,14 +79,24 @@ window.onload = function () {
 
         //SET text
         const setEl = document.createElement('p')
+        setEl.classList.add('card-text')
         setEl.innerText = `Sets: ${entry.sets}`
         entryEl.appendChild(setEl)
 
         //REP text
         const repEl = document.createElement('p')
+        repEl.classList.add('card-text')
         repEl.innerText = `Reps: ${entry.reps}`
         entryEl.appendChild(repEl)
 
-        journalEntriesEl.appendChild(entryEl)
+        //DATE text
+        const dateEl = document.createElement('p')
+        dateEl.classList.add('small')
+        dateEl.classList.add('text-muted')
+        dateEl.innerText = entry.created.toLocaleDateString()
+        entryEl.appendChild(dateEl)
+
+        cardEl.appendChild(entryEl)
+        journalEntriesEl.appendChild(cardEl)
     })
 }

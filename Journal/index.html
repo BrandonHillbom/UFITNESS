@@ -11,7 +11,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>UFITNESS</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
 </head>
 
 <body>
@@ -29,13 +29,13 @@
                     <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/journal">Journal<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../journal">Journal<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/quiz">Body Type Quiz</a>
+                    <a class="nav-link" href="../quiz">Body Type Quiz</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/progress">Progress Tracker</a>
+                    <a class="nav-link" href="../progress">Progress Tracker</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdownMenuLink" role="button"
@@ -43,17 +43,53 @@
                         Resources
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/nutrition">Nutrition</a>
-                        <a class="dropdown-item" href="/exercises">Exercises</a>
-                        <a class="dropdown-item" href="/external">External</a>
+                        <a class="dropdown-item" href="../nutrition">Nutrition</a>
+                        <a class="dropdown-item" href="../exercises">Exercises</a>
+                        <a class="dropdown-item" href="../external">External</a>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
-    <main>
+    <main class="container">
         <h1>Journal</h1>
-            <div id="journal-entries" class="text-center"> </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="mb-3 text-center">
+                    <button type="button" class="btn btn-light" data-toggle="collapse" data-target="#collapseForm"
+                        aria-expanded="false" aria-controls="collapseForm">Log
+                        Activity</button>
+                </div>
+                <div class="collapse" id="collapseForm">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone
+                                        else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="journal-entries" class="text-center"> </div>
     </main>
 
     <footer>
@@ -72,7 +108,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="/assets/scripts/journal.js"></script>
+    <script src="../assets/scripts/journal.js"></script>
 </body>
 
 
