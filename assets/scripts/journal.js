@@ -98,5 +98,17 @@ window.onload = function () {
 
         cardEl.appendChild(entryEl)
         journalEntriesEl.appendChild(cardEl)
+
+
     })
-}
+
+    const setCount = document.getElementById('setCount')
+    const repCount = document.getElementById('repCount')
+
+    const form = document.querySelector('form')
+    form.onsubmit = function (event) {
+        event.preventDefault();
+
+        
+        }
+    }
